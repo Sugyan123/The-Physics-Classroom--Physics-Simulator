@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>Physics Simulator LinearV0.1</title>
+</head>
+<body>
+	<img src="C:\Users\sugya\Downloads\maxcom2.png" class="center">
+<div class="container">
+	<div class="navbar">
+		<ul>
+			<li><a href="physicsim.html">Home</a></li>
+			<li><a href="linear.html">Linear</a></li>
+			<li><a href="newtonfirstandsecondlaw.html">Net force</a></li>
+<li><a href="Frictionramp.html">Friction Ramp</a></li>
+<li><a href="CircularMotion.html">Circular Motion</a></li>
+
+		</ul>
+	<div class="simulationexplanation">
+	<div class="education">
+	<p style="color:black;">This is a simulation of constant circular motion.</p>
+	<p style="color:black ;">The acceleration of  particle traveling at constant circular motion can be calculated with the formula a=(v^2)/r with v standing for velocity and r standing for radius.<p>
+	<p style="color:black">Angular change can be calculated using the formula w=v/r. w stands for the change in angle in terms of radians/second.
+	</div>
+	<div class="input">
+		<form onsubmit="containercircularmotion(); return false;">
+		<ul>
+		<li>
+		Mass:<br>
+  		<input type="text" id="mass" name="namesy" value="1"><br></li>
+		<li>
+  		Radius:<br>
+  		<input type="text" id="radius" name="namesx" value="1"><br></li>
+		<li>
+  		Velocity:<br>
+  		<input type="text" id="velocity" name="namey" value="0"><br></li>
+		</ul>
+		<div class="submit">
+  		<button type="submit" value="Submit">Start</button>
+		</div>
+		</form>
+	</div>
+	</div>
+		<canvas class="linear">
+			<p>Your browser doesn't support canvas. Boo hoo!</p>
+		</canvas>
+
+</div>
+<script src="simulation.js"></script>
+</body>
+</html>
